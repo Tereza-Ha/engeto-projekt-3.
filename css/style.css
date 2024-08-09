@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-color: #677d6a;
+  --text-color: #d8cdbc;
+  --nav-color: #1a3636;
+}
+
+[data-theme="dark"] {
+  --main-color: #1a3636;
+  --text-color: #d8cdbc;
+  --nav-color: #1a3636;
+  --icon-color: #d8cdbc;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--nav-color);
+  height: 40px;
+  justify-content: space-evenly;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav li a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e9877b;
+}
+
+.menu-icon {
+  display: none;
+  margin: 30px;
+}
+
+.up-icon {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  font-size: 35px;
+}
+
+.mode-icon {
+  display: block;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  font-size: 35px;
+}
+
+.up-icon i,
+.mode-icon i {
+  color: var(--nav-color);
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--nav-color);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

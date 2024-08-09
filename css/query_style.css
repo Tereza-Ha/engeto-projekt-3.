@@ -1,0 +1,64 @@
+@media (max-width: 756px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: var(--nav-color);
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    color: var(--text-color);
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 0px 10px 20px;
+  }
+
+  /* home page */
+
+  .text,
+  .our-tips-content,
+  .register-link {
+    width: 80%;
+  }
+
+  .image-section {
+    flex-direction: column;
+  }
+
+  /* gallery */
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery-img {
+    height: 400px;
+  }
+
+  /* icons */
+
+  .up-icon,
+  .mode-icon {
+    right: 12px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 756px) {
+  header nav {
+    display: block !important;
+  }
+}
